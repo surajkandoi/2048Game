@@ -1,0 +1,52 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="base.css" charset="utf-8">
+    <script src="Game.js"type="text/javascript"></script>
+    <script src="jquery-2.2.0.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+          <spam class="heading">
+          <h2>2048</h2>
+          <p>Join the numbers and get to the 2048 tile! </p>
+        </spam>
+        <div id="wrapper">
+            <div id="score"><h5>
+              score
+            </h5>
+            <p>
+            </p>
+          </div>
+            <spam id="button"> <button type="button" name="reset" id="reset">New Game</button></spma>
+            </div>
+        </header>
+        <main id="game1">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </main>
+        <div id="gameOver">
+            <h1>Game Over</h1>
+            <spam id="button"> <button type="button" name="reset" id="reset1">Try Again</button></spma>
+        </div>
+        <script>
+        function onBodyLoad() {
+          Game.init();
+        }
+          window.addEventListener('load',onBodyLoad);
+        </script>
+    </body>
+</html>
